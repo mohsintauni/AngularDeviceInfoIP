@@ -1,0 +1,33 @@
+<!-- app.component.html -->
+<div class="container">
+ 
+  <h1>Angular Google Maps - Get Latitude and Longitude on Click</h1>
+ 
+  <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onMapClicked($event)">
+  </agm-map>
+ 
+  <div>Latitude: {{latitude}}</div>
+  <div>Longitude: {{longitude}}</div>
+
+  
+  <p>IP Address: {{ipAddressLocal}}</p>
+  <p>Country Code: {{country_code}}</p>
+  <p>Country Name: {{country_name}}</p>
+  <p>City: {{city}}</p>
+  <p>Postal code: {{postal}}</p>
+  <p>State: {{state}}</p>
+</div>
+
+<div>
+  <ul>
+    <li>user Agent - {{deviceInfo.userAgent}}</li>
+    <li>Os - {{deviceInfo.os}}</li>
+    <li>browser - {{deviceInfo.browser}}</li>
+    <li>device - {{deviceInfo.device}}</li>
+    <li>os_version - {{deviceInfo.os_version}}</li>
+    <li>os - {{deviceInfo.os}}</li>
+    <li>browser_version - {{deviceInfo.browser_version}}</li>
+    <li>deviceType - {{deviceInfo.deviceType}}</li>
+    <li>orientation - {{deviceInfo.orientation}}</li>
+  </ul>
+</div>
